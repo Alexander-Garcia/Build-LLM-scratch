@@ -50,4 +50,11 @@ Notes and code from reading Build A Large Language Model by S. Raschka
         - directly associated with specific positions in a sequence
         - each position in input sequence, unique embedding is added to token's embedding to convey exact location
 - the choice between the two often depends on specific application and nature of data being processed
+## Chapter 3 - Coding attention mechanisms
+- Why attention? For translation you can't simply go word by word
+    - to address this problem use a DNN with two submodules **encoder** and **decoder**
+    - encoder read in and process entire text
+    - decoder produces translated text
+    - previously done by **recurrent neural networks** (RNNs)
+- Self-attention allows each position in input seq to consider the relevancy of, or "attend to," all other positions in same seq when computing representation of a seq
 
