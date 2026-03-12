@@ -53,8 +53,14 @@ Notes and code from reading Build A Large Language Model by S. Raschka
 ## Chapter 3 - Coding attention mechanisms
 - Why attention? For translation you can't simply go word by word
     - to address this problem use a DNN with two submodules **encoder** and **decoder**
-    - encoder read in and process entire text
-    - decoder produces translated text
+        - encoder read in and process entire text
+        - decoder produces translated text
     - previously done by **recurrent neural networks** (RNNs)
 - Self-attention allows each position in input seq to consider the relevancy of, or "attend to," all other positions in same seq when computing representation of a seq
+- Consider the input "your journey starts with one step"
+    - Each input is a token with a vector embedding x(i)
+    - Has an Attention Weight to weigh the importance of input x(i)
+    - Corresponds to a context vector z(i)
+        - this enhanced context vector is an embedding that contians info about x(2) and all other input elements
+-
 
